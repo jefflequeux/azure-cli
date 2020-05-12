@@ -731,8 +731,8 @@ jobs:
       TargetPath: $(Build.ArtifactStagingDirectory)
       ArtifactName: debian-$(distro)
 
-- job: TestLinuxPackages
-  displayName: Test Linux Packages
+- job: TestDebPackages
+  displayName: Test Deb Packages
 
   dependsOn:
    - BuildUbuntuPackages
